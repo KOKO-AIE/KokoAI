@@ -10,6 +10,8 @@ import { auth } from "../auth/firebase";
 import { db } from "../auth/firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { GoogleAuthProvider } from 'firebase/auth'
+import {signInWithPopup } from "firebase/auth";
+
 
 export function SignIn() {
 

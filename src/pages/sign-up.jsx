@@ -9,6 +9,8 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../auth/firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
 
 export function SignUp() {
   const [email, setEmail] = useState("");
